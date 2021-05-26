@@ -47,7 +47,7 @@ class Visit(models.Model):
         Возвращает True или False
         '''
         duration = self.get_duration()
-        duration = duration.total_seconds()
-        duration = duration // 60
+        duration_seconds = duration.total_seconds()
+        duration_minutes = duration // 60
 
-        return int(duration) > int(minutes)
+        return int(duration_minutes) > int(minutes)
