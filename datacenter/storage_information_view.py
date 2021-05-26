@@ -4,9 +4,6 @@ from datacenter.models import Passcard
 from datacenter.models import Visit
 
 
-# import datetime
-
-
 def format_duration(duration):
     '''
     Превращает длительность визита в строку, готовит к выводу на страницу.
@@ -39,6 +36,6 @@ def storage_information_view(request):
         )
 
     context = {
-        "non_closed_visits": non_closed_visits,  # не закрытые посещения
+        "non_closed_visits": non_closed_visits,
     }
     return render(request, 'storage_information.html', context)
