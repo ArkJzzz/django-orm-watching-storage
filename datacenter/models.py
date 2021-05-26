@@ -46,6 +46,6 @@ class Visit(models.Model):
         '''
         duration = self.get_duration()
         duration_seconds = duration.total_seconds()
-        duration_minutes = duration // 60
+        duration_minutes = duration_seconds // 60
 
         return int(duration_minutes) > int(minutes)
