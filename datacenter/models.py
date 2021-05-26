@@ -35,8 +35,6 @@ class Visit(models.Model):
         '''
         entered_at = django.utils.timezone.localtime(self.entered_at)
         leaved_at = django.utils.timezone.localtime(self.leaved_at)
-        if not leaved_at:
-            leaved_at = django.utils.timezone.localtime()
 
         return leaved_at - entered_at
 
