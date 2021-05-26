@@ -28,14 +28,14 @@ def storage_information_view(request):
 
         non_closed_visits.append(
             {
-                "who_entered": passcard.owner_name,
-                "entered_at": entered_at,
-                "duration": formatted_duration,
-                "is_strange": visit.is_long() 
+                'who_entered': passcard.owner_name,
+                'entered_at': entered_at,
+                'duration': formatted_duration,
+                'is_strange': visit.is_long() 
             }
         )
 
     context = {
-        "non_closed_visits": non_closed_visits,
+        'non_closed_visits': non_closed_visits,
     }
     return render(request, 'storage_information.html', context)
