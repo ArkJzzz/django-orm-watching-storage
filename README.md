@@ -37,7 +37,7 @@ pip3 install -r requirements.txt
 ## Запуск
 
 ```
-python3 main.py
+python3 manage.py runserver 0.0.0.0:8000
 ```
 
 Cайт будет доступен по адресу: [http://0.0.0.0:8000/](http://0.0.0.0:8000/)
