@@ -27,6 +27,9 @@ DATABASE_PORT=<порт>
 DATABASE_NAME=<имя базы данных>
 DATABASE_USER=<имя пользователя>
 DATABASE_PASSWORD=<пароль>
+DEBUG=False
+ALLOWED_HOSTS=<ваш_домен_1, ваш.домен.2>
+SECRET_KEY=<ключ_для_шифрования_паролей_пользователей_сайта>
 ```
 
 - Установите зависимости:
